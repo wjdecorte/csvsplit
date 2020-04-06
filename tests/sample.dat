@@ -1,0 +1,16 @@
+id,"model type","start date","predicted value"
+1,settlement,2020-04-02,1
+2,bridging,2020-01-15,0
+3,claims,2020-02-07,1
+4,bridging,2020-02-24,1
+5,claims,2020-04-02,0
+6,settlement,2020-04-02,1
+7,bridging,2020-01-15,0
+8,claims,2020-02-07,1
+9,bridging,2020-02-24,1
+10,claims,2020-04-02,0
+11,settlement,2020-04-02,1
+12,bridging,2020-01-15,0
+13,claims,2020-02-07,1
+14,bridging,2020-02-24,1
+15,claims,2020-04-02,0
