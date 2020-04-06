@@ -42,6 +42,7 @@ def main(input_file, column_name, out_path):
         file_handlers[split_value].writerow(line)
         stats[split_value] += 1
 
-    click.secho("Split completed")
+    click.secho("Split completed", fg="green")
     for k, v in stats.items():
-        click.secho(f"{k} file: {v} records")
+        click.secho(f"{k} file: {v} records", fg="magenta")
+    click.secho(f"Total Count = {sum(stats.values())}", bold=True, fg="blue")
