@@ -1,33 +1,30 @@
-NaviLoader
+CSV Split
 ============
 
-NaviLoader will process all source files in JSON format saved in the
-source data directory and save without duplicates in the target data directory.
+CSV Split will split a csv file based on the values in a column and store the results in separate files.
 
 Look how easy it is to use::
 
-    $ naviload --help
-    $ naviload sample --help
-    $ naviload loader --help
+    $ csvsplit --help
+    $ csvsplit sample --help
+    $ csvsplit loader --help
 
 Features
 --------
 
-- Create sample data for testing
-- Saves data in date specific files in `Parquet <https://parquet.apache.org/>`_ format
-- Removes any duplicate records
+- Todo: Coming Soon
 
 Installation
 ------------
 
-Install naviload CLI by running::
+Install csvsplit CLI by running::
 
     $ cd /path/to/project/
-    $ python3 -m venv naviloader
-    $ cd naviloader
+    $ python3 -m venv csvsplit
+    $ cd csvsplit
     $ source bin/activate
-    $ pip install --upgrade pip
-    $ pip install git+https://github.com/wjdecorte/naviloader.git@master
+    $ pip install --upgrade pip  # (optional step)
+    $ pip install git+https://github.com/wjdecorte/csvsplit.git@master
 
 
 Examples
@@ -35,21 +32,21 @@ Examples
 
 CLI command examples::
 
-    $ naviload --help   # display the command help
+    $ csvsplit --help   # display the command help
 
-    $ naviload <sub-command> --help   # help for a specific sub-command
+    $ csvsplit <sub-command> --help   # help for a specific sub-command
 
     # Create 4 sample files that start with the prefix sample_data
-    $ naviload sample /path/to/source/data --file-count=4 --file-prefix=sample_data
+    $ csvsplit sample /path/to/source/data --file-count=4 --file-prefix=sample_data
 
     # Load the sample files
-    $ naviload loader /path/to/source/data /path/to/target/data
+    $ csvsplit loader /path/to/source/data /path/to/target/data
 
 Contribute
 ----------
 
-- Issue Tracker: `<https://github.com/wjdecorte/naviloader/issues>`_
-- Source Code: `<https://github.com/wjdecorte/naviloader>`_
+- Issue Tracker: `<https://github.com/wjdecorte/csvsplit/issues>`_
+- Source Code: `<https://github.com/wjdecorte/csvsplit>`_
 
 Support
 -------
